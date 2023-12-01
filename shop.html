@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Juici Patties</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/chosen.min.css">
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!-- header start -->
+        <header class="header-area">
+            <div class="header-top black-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12 col-sm-4">
+                            <div class="welcome-area">
+                                <p>Welcome to Juici Patties </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-12 col-sm-8">
+                            <div class="account-curr-lang-wrap f-right">
+                                <ul>
+                                    
+                                    
+                                    <li class="top-hover"><a href="#">Setting  <i class="ion-chevron-down"></i></a>
+                                        <ul>
+                                            <li><a href="wishlist.html">Wishlist  </a></li>
+                                            <li><a href="my-account.html">My account</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-12 col-sm-4">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img alt="" src="assets/img/logo/logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-12 col-sm-8">
+                            <div class="header-middle-right f-right">
+                                <div class="header-login">
+                                    <a href="login-register.html">
+                                        <div class="header-icon-style">
+                                            <i class="icon-user icons"></i>
+                                        </div>
+                                        <div class="login-text-content">
+                                            <p>Welcome, Abishua!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="header-wishlist">
+                                   &nbsp;
+                                </div>
+                                <div class="header-cart">
+                                    <a href="#">
+                                        <div class="header-icon-style">
+                                            <i class="icon-handbag icons"></i>
+
+                                            <span id="total-items"></span>
+                                        </div>
+
+                                        <div class="cart-text">
+                                            <span class="digit">My Cart</span>
+                                            <span class="cart-digit-bold">Quick Buy</span>
+                                        </div>
+                                    </a>
+                                    <div class="shopping-cart-content">
+                                        <ul>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/img/cart/rice.png"></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Rice & Peas  </a></h4>
+                                                    <h6>Qty: 01</h6>
+                                                    <span>$120.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="ion ion-close"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/img/cart/friedchicken.png"></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Fried Chicken</a></h4>
+                                                    <h6>Qty: 02</h6>
+                                                    <span>$350.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="ion ion-close"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="shopping-cart-total">
+                                            <h4>Total : <span class="shop-total">$450.00</span></h4>
+                                        </div>
+                                        <div id = viewCartBtn class="shopping-cart-btn">
+                                            <a href="cart-page.html">view cart</a>
+                                            <!-- Assuming your "quick add" link is within a product popup -->
+                                            <a href="#" onclick="quickAddToCart('Rice and Peas', 1); quickAddToCart('Fried Chicken', 1); closeProductPopup();">quick add</a>
+
+                                            
+                                        </div>
+                                    </div>
+                               
+							   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom transparent-bar black-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Log Out</a></li>
+                                        <li><a href="about-us.html">About</a></li>
+                                        <li><a href="contact.html">contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile-menu-area-start -->
+			<div class="mobile-menu-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="mobile-menu">
+								<nav id="mobile-menu-active">
+									<ul class="menu-overflow" id="nav">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- mobile-menu-area-end -->
+        </header>
+        <div class="breadcrumb-area gray-bg">
+            <div class="container">
+                <div class="breadcrumb-content">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Shop Grid Style </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shop-page-area pt-100 pb-100">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-9">
+                        <div class="banner-area pb-30">
+                            <a href="product-details.html"><img alt="" src="assets/img/banner/banner-49.png"></a>
+                        </div>
+                        <!-- Product Popup Container -->
+                        <div id="product-popup" class="product-popup">
+                            <div class="product-popup-content">
+        <!-- Close Button -->
+                                <span class="close-popup" onclick="closeProductPopup()">&times;</span>
+        
+        <!-- Product Image -->
+                                <div class="popup-product-img">
+                                    <img src="" alt="Product Image" id="popup-img">
+                            </div>
+        
+        <!-- Product Details -->
+                    <div class="popup-product-details">
+                        <h2 id="popup-product-name"></h2>
+                        <p id="popup-product-price"></p>
+            
+            <!-- Quantity Selection -->
+                            <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity-input" value="1" min="1">
+            
+            <!-- Add to Cart Button -->
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+            
+            
+                        <div class="grid-list-product-wrapper">
+                            <div class="product-grid product-view pb-20">
+                                <div class="row">
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(patties)">
+                                                    <img src="assets/img/product/product1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">PATTIES</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$300.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(meatLoaves)">
+                                                    <img src="assets/img/product/product2.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">MEAT LOAVES</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(wata)">
+                                                    <img src="assets/img/product/product22.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">WATA</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(tea)">
+                                                    <img src="assets/img/product/product21.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">TEA</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(cranWata)">
+                                                    <img src="assets/img/product/product19.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">CRAN WATA</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(bananaBread)">
+                                                    <img src="assets/img/product/product18.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">BANANA BREAD</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(fries)">
+                                                    <img src="assets/img/product/product17.png" alt="">
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">FRIES</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(rolls)">
+                                                    <img src="assets/img/product/product23.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">ROLLS</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(sandwichBiscuit)">
+                                                    <img src="assets/img/product/product16.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">SANDWICH BISCUIT </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(boxDrink)">
+                                                    <img src="assets/img/product/product15.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">BOX DRINK</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(truJuice)">
+                                                    <img src="assets/img/product/product14.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">TRU JUICE</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(jerkedChicken)">
+                                                    <img src="assets/img/product/product13.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">JERKED CHICKEN </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(bbqChicken)">
+                                                    <img src="assets/img/product/product12.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">BBQ CHICKEN </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+                                    <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(friedChicken)">
+                                                    <img src="assets/img/product/product11.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">FRIED CHICKEN </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(soup)">
+                                                    <img src="assets/img/product/product3.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">SOUPS </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(porridges)">
+                                                    <img src="assets/img/product/product4.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">PORRIDGES </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(riceAndPeas)">
+                                                    <img src="assets/img/product/product5.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">RICE & PEAS </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(fritters)">
+                                                    <img src="assets/img/product/product6.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">FRITTERS</a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <p id="product-price">$100.00</p>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(boiledFood)">
+                                                    <img src="assets/img/product/product7.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">BOILED FOOD </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(coffee)">
+                                                    <img src="assets/img/product/product8.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p id="product-description"></p>
+                                            <div class="product-content">
+                                                
+                                                <h4>
+                                                    <a href="product-details.html">COFFEE </a>
+                                                </h4>
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+									<div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#" onclick="openProductPopup(cookies)">
+                                                    <img src="assets/img/product/product24.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <p id="product-description"></p>
+                                                <h4>
+                                                    <a href="product-details.html">COOKIES </a>
+                                                </h4>
+                                                
+                                                <div class="product-price-wrapper">
+                                                    <span>$100.00</span>
+                                                </div>
+                                            </div>
+										</div>
+                                    </div>
+								</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="shop-sidebar-wrapper gray-bg-7 shop-sidebar-mrg">
+                            <div class="shop-widget">
+                                <h4 class="shop-sidebar-title">Shop By Categories</h4>
+                                <div class="shop-catigory">
+                                    <ul id="faq">
+                                        <li> <a href="#">Breakfast</a> </li>
+                                        <li> <a href="#">Lunch</a></li>
+                                        <li> <a href="#">Snacks</a></li>
+                                        <li> <a href="#">Beverages</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-area black-bg-2 pt-70">
+            <div class="footer-bottom-area border-top-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-7">
+                            <div class="copyright">
+                                <p>Copyright © <a href="#"></a>Juici Patties All Right Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5">
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-rss"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<!-- all js here -->
+        <script>
+            var totalQuantity = localStorage.getItem('totalQuantity') || 0;
+
+// Display totalQuantity wherever needed on the page
+            document.getElementById('total-items').textContent = totalQuantity;
+        </script>
+        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/ajax-mail.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
